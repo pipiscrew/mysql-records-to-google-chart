@@ -21,7 +21,19 @@ on the last tab you can see the actual records by database with the help of [wen
 all are structured and commented. Optimation is not done.
 
 <br><br>
-
+The sample made with this table :
+```sql
+CREATE TABLE `jobs` (
+  `rec_id` int(11) NOT NULL AUTO_INCREMENT,
+  `USER_NAME` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DATE_CREATED` datetime DEFAULT NULL,
+  `COUNTRY` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `QUEUE` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `DELIVERED` smallint(10) DEFAULT NULL,
+  PRIMARY KEY (`rec_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+```
+<br><br>
 ##This project uses the following 3rd-party dependencies :<br>
 -[Bootstrap](http://getbootstrap.com)<br>
 -[bootstrap-selector](https://github.com/pipiscrew/bootstrap-selector)<br>
