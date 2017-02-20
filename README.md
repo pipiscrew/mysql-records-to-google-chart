@@ -18,7 +18,7 @@ then draw it with - [Google Charts](https://developers.google.com/chart/)<br>
 on the last tab you can see the actual records by database with the help of [wenzhixin](https://github.com/wenzhixin/bootstrap-table)<br><br><br>
 ![alt text](https://github.com/pipiscrew/mysql-records-to-google-chart/blob/master/screenshot5.png "Screenshot5")
 <br><br>
-all are structured and commented. Optimation is not done.
+all are structured and commented. Optimization is not done.
 
 <br><br>
 The sample made with this table :
