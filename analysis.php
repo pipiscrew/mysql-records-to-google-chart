@@ -83,7 +83,7 @@ $progress_entry = new stdClass();
 
 while($startdate < $enddate) {
     
-    $startdate_plus_eight = date('Y-m-d', strtotime('+7 days', $startdate));
+    $startdate_plus_eight = date('Y-m-d', strtotime('+6 days', $startdate));
     $startdate_formatted =  date('Y-m-d', $startdate);
         
     $total_usa = $mysql->getScalar("select count(*) from jobs where (DATE_CREATED between '{$startdate_formatted}'
