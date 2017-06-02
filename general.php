@@ -41,11 +41,11 @@ class dbase{
 		//$dbh->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		
 		//check if table has records, if not create table
-		$d = getScalar("select count(*) from users",null);
+		$d = $this->getScalar("select count(*) from users",null);
 		if ($d==0)
 		{
-			executeSQL("CREATE TABLE [users] (user_id INTEGER PRIMARY KEY, user_mail TEXT, user_password TEXT, user_level INTEGER)", null);
-			executeSQL("your other tables here?",null);
+			$this->executeSQL("CREATE TABLE [users] (user_id INTEGER PRIMARY KEY, user_mail TEXT, user_password TEXT, user_level INTEGER)", null);
+			$this->executeSQL("your other tables here?",null);
 			
 			//read&write only server (user cant download the dbase)
 			chmod("dbase.db", 0600);
